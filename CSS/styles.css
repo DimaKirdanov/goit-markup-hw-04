@@ -170,11 +170,18 @@ body {
 .mail-svg {
   width: 16px;
   height: 12px;
-  color: wheat;
+  fill: var(--text-color);
 }
 .tell-svg {
   width: 10px;
   height: 16px;
+  fill: var(--text-color);
+}
+.mail-svg:hover,
+.mail-svg:focus,
+.tell-svg:hover,
+.tell-svg:focus {
+  fill: teal;
 }
 
 /* /HEADER */
@@ -317,6 +324,7 @@ body {
 .team-text {
   font-size: 16px;
   line-height: 1.19;
+  margin-bottom: 16px;
 }
 .team-list {
   flex-wrap: wrap;
@@ -332,6 +340,34 @@ body {
 .team-info {
   padding: 30px;
   text-align: center;
+  background-color: var(--botton-background);
+}
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--background-header);
+  border: none;
+}
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--botton-action-text-color);
+}
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+  fill: var(--background-header);
+}
+
+.social-list-icon {
+  fill: #afb1b8;
 }
 /* footer */
 .footer {
